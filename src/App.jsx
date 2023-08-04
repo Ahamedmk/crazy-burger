@@ -1,14 +1,9 @@
-import { useState } from 'react'
 import { Login } from './Pages/Login/Login'
 
-function App() {
-  
-
+function App() { 
   return (
-    <>
-      
-      <Login />
-      
+    <>   
+      <Login /> 
     </>
   )
 }
