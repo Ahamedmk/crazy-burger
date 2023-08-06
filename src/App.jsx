@@ -1,9 +1,9 @@
-import { Login } from './Pages/Login/Login'
+import LoginPage from './Pages/Login/LoginPage'
 
 function App() { 
   return (
     <>   
-      <Login /> 
+      <LoginPage /> 
     </>
   )
 }
