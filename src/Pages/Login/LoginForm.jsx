@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 
  export function LoginForm() {
@@ -6,8 +7,8 @@ import { useState } from "react"
 
     const handleClick = (e) => {
         e.preventDefault()
-        alert (`Bonjour ${name}` )
-        setName("")
+        
+         setName("")
     }
   
     
