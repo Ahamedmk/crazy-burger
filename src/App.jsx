@@ -1,11 +1,9 @@
-import LoginPage from './Pages/Login/LoginPage'
-import OrderPage from './Pages/OrderPage/OrderPage'
+ import LoginPage from './Pages/Login/LoginPage'
 
 function App() { 
   return (
     <>   
-      {/* <LoginPage />  */}
-      <OrderPage />
+      <LoginPage />     
     </>
   )
 }
