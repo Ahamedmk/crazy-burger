@@ -3,7 +3,7 @@ import {useNavigate } from "react-router-dom"
 import burger from "../../assets/burger-background.jpg"
 import {styled} from "styled-components"
 import { theme } from "../../theme"
-import{BsPersonCircle} from "react-icons/bs"
+// import{BsPersonCircle} from "react-icons/bs"
 
 
  export function LoginForm() {
@@ -23,6 +23,7 @@ import{BsPersonCircle} from "react-icons/bs"
           <div className="first-container">
             <div className="container">
               <h1>Bienvenue chez nous !</h1>
+              <hr className="custom-hr" />
               <h2>Connectez vous</h2>
               <div className="container-form">
               {/* <BsPersonCircle className="icon" /> */}
@@ -50,7 +51,6 @@ import{BsPersonCircle} from "react-icons/bs"
   background-size: cover;
   background-position: center;
  height: 100vh;
- 
  width: 100%;
  display: flex;
  justify-content: center;
@@ -91,9 +91,14 @@ import{BsPersonCircle} from "react-icons/bs"
  
  h1 {
    font-size:30px;
-   color:${theme.colors.greyBlue};
+   /* color:${theme.colors.greyBlue}; */
    /* background-color:green; */
  }
+
+ hr{
+  color:${theme.colors.greyBlue};
+ }
+ 
  h2 {
   text-align: center;
  }
