@@ -1,5 +1,7 @@
 import { useState } from "react"
 import {useNavigate } from "react-router-dom"
+import {styled} from "styled-components"
+import { theme } from "../../theme"
 
 
  export function LoginForm() {
@@ -15,13 +17,21 @@ import {useNavigate } from "react-router-dom"
     
     return (
         <>
-          <form onSubmit={handleClick} >
+          <LoginFormStyled onSubmit={handleClick} >
           <h1>Bienvenue chez nous !</h1>
           <h2>Connectez vous</h2>
           <input type="text" value={name} onChange={e => setName(e.target.value)} required="required" placeholder="Entrez votre prénom..." />
           <button >Accédez à votre espace</button>
-          </form>  
+          </LoginFormStyled>  
         </>
       )
 
 }
+ const LoginFormStyled = styled.form`
+ border: 1px solid blue ;
+ h1 {
+   font-size:50px;
+   color:${theme.colors.greyBlue};
+   background-color:green;
+ }
+ `
