@@ -25,7 +25,7 @@ import{BsPersonCircle} from "react-icons/bs"
               <h1>Bienvenue chez nous !</h1>
               <h2>Connectez vous</h2>
               <div className="container-form">
-              <BsPersonCircle className="icon" />
+              {/* <BsPersonCircle className="icon" /> */}
                 <input type="text" value={name} onChange={e => setName(e.target.value)} required="required" placeholder="Entrez votre prénom "/>
                 <button >Accéder à mon espace</button>
               </div>
@@ -37,21 +37,20 @@ import{BsPersonCircle} from "react-icons/bs"
 
 }
  const LoginFormStyled = styled.form`
- border: 1px solid blue ;
- background-image: url('../../assets/burger-background.jpg');
-  background-size: cover;
-  background-position: center;
+ /* border: 5px solid red ; */
+ 
  height: 100vh;
  display: flex;
  justify-content: center;
  align-items: center;
  
  .first-container {
-  border: 3px solid yellowgreen ;
+  /* border: 3px solid yellowgreen ; */
   background-image: url(${burger});
   background-size: cover;
   background-position: center;
  height: 100vh;
+ 
  width: 100%;
  display: flex;
  justify-content: center;
@@ -61,12 +60,27 @@ import{BsPersonCircle} from "react-icons/bs"
  .container {
   position: relative;
   display: inline-block;
-  border: 1px solid green;
+  height: 250px;
+  /* border: 1px solid green; */
  }
  .container-form {
   display: flex;
+  height: 100px;
   flex-direction: column;
-  border: 1px solid red;
+  justify-content:space-around;
+  /* border: 1px solid red; */
+ }
+ input {
+  padding: 10px;
+  border-radius:5px;
+  border: none;
+  outline: none;
+ }
+ button {
+  padding: 10px;
+  border-radius:5px;
+  outline: none;
+  border: none;
  }
   .icon {
   position: absolute;
@@ -76,9 +90,9 @@ import{BsPersonCircle} from "react-icons/bs"
 }
  
  h1 {
-   font-size:50px;
+   font-size:30px;
    color:${theme.colors.greyBlue};
-   background-color:green;
+   /* background-color:green; */
  }
  h2 {
   text-align: center;
