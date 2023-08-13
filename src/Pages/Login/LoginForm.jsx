@@ -23,7 +23,7 @@ import { theme } from "../../theme"
           <div className="first-container">
             <div className="container">
               <h1>Bienvenue chez nous !</h1>
-              <hr className="custom-hr" />
+              <hr />
               <h2>Connectez vous</h2>
               <div className="container-form">
               {/* <BsPersonCircle className="icon" /> */}
@@ -39,7 +39,8 @@ import { theme } from "../../theme"
 }
  const LoginFormStyled = styled.form`
  /* border: 5px solid red ; */
- 
+ padding: 0;
+ margin: 0;
  height: 100vh;
  display: flex;
  justify-content: center;
@@ -91,15 +92,21 @@ import { theme } from "../../theme"
  
  h1 {
    font-size:30px;
+   font-family: 'Amatic SC', cursive;
+   font-weight: 700;
    /* color:${theme.colors.greyBlue}; */
    /* background-color:green; */
  }
 
  hr{
-  color:${theme.colors.greyBlue};
+  height: 3px;
+        background-color: ${theme.colors.red};
+        border: none;
  }
  
  h2 {
+  font-family: 'Amatic SC', cursive;
+   font-weight: 400;
   text-align: center;
  }
  `
