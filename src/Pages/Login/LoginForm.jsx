@@ -1,11 +1,8 @@
 import { useState } from "react"
 import {useNavigate } from "react-router-dom"
-import burger from "../../assets/burger-background.jpg"
 import {styled} from "styled-components"
 import { theme } from "../../theme"
-import { LoginTitle } from "./LoginTitle"
 // import{BsPersonCircle} from "react-icons/bs"
-
 
  export function LoginForm() {
     const [name, setName] = useState("")
@@ -21,9 +18,7 @@ import { LoginTitle } from "./LoginTitle"
     return (
         <>
           <LoginFormStyled onSubmit={handleClick} >
-          <div className="first-container">
             <div className="container">
-             <LoginTitle /> 
               <h1>Bienvenue chez nous !</h1>
               <hr />
               <h2>Connectez vous</h2>
@@ -33,36 +28,19 @@ import { LoginTitle } from "./LoginTitle"
                 <button >Accéder à mon espace {'>'} </button>
               </div>
             </div>
-          </div>
           </LoginFormStyled>  
         </>
       )
 
 }
  const LoginFormStyled = styled.form`
- border: 5px solid red ; 
- padding: 0;
- margin: 0;
- height: 100vh;
+ border: 3px solid red ; 
  display: flex;
  justify-content: center;
  align-items: center;
- 
- .first-container {
-  /* border: 3px solid yellowgreen ; */
-  background-image: url(${burger});
-  background-size: cover;
-  background-position: center;
- height: 100vh;
- width: 100%;
- display: flex;
- justify-content: center;
- align-items: center;
- }
  
  .container {
-  position: relative;
-  display: inline-block;
+  /* display: inline-block; */
   height: 250px;
   border: 1px solid green; 
  }

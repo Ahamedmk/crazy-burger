@@ -8,7 +8,7 @@ export function LoginTitle() {
     <LoginTitleStyled>
         <div className="crazy">CRAZEE</div>
         <div><img src={bigburger} alt="image"></img> </div>
-        <div className="burger">BURGER</div>
+        <div className="crazy">BURGER</div>
     </LoginTitleStyled>
   )
 }
@@ -34,17 +34,4 @@ img {
   color: ${theme.colors.primary_burger};
 
 }
-.burger {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-family: 'Amatic SC', cursive;
-   font-weight: 700;
-  text-align: center;
-  font-weight: 700;
-   font-size: 60px;
-  text-align: center;
-  color: ${theme.colors.primary_burger};
-}
-`
+`;
