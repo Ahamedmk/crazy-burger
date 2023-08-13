@@ -3,6 +3,7 @@ import {useNavigate } from "react-router-dom"
 import burger from "../../assets/burger-background.jpg"
 import {styled} from "styled-components"
 import { theme } from "../../theme"
+import { LoginTitle } from "./LoginTitle"
 // import{BsPersonCircle} from "react-icons/bs"
 
 
@@ -22,6 +23,7 @@ import { theme } from "../../theme"
           <LoginFormStyled onSubmit={handleClick} >
           <div className="first-container">
             <div className="container">
+             <LoginTitle /> 
               <h1>Bienvenue chez nous !</h1>
               <hr />
               <h2>Connectez vous</h2>
