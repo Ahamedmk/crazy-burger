@@ -34,7 +34,7 @@ import { theme } from "../../theme"
 
 }
  const LoginFormStyled = styled.form`
- border: 3px solid red ; 
+ /* border: 3px solid red ;  */
  display: flex;
  justify-content: center;
  align-items: center;
@@ -42,14 +42,14 @@ import { theme } from "../../theme"
  .container {
   /* display: inline-block; */
   height: 250px;
-  border: 1px solid green; 
+  /* border: 1px solid green;  */
  }
  .container-form {
   display: flex;
   height: 100px;
   flex-direction: column;
   justify-content:space-around;
-  border: 1px solid red; 
+  /* border: 1px solid red;  */
  }
  input {
   padding: 10px;
