@@ -30,7 +30,7 @@ import { LoginTitle } from "./LoginTitle"
               <div className="container-form">
               {/* <BsPersonCircle className="icon" /> */}
                 <input type="text" value={name} onChange={e => setName(e.target.value)} required="required" placeholder="Entrez votre prénom "/>
-                <button >Accéder à mon espace</button>
+                <button >Accéder à mon espace {'>'} </button>
               </div>
             </div>
           </div>
@@ -40,7 +40,7 @@ import { LoginTitle } from "./LoginTitle"
 
 }
  const LoginFormStyled = styled.form`
- /* border: 5px solid red ; */
+ border: 5px solid red ; 
  padding: 0;
  margin: 0;
  height: 100vh;
@@ -64,14 +64,14 @@ import { LoginTitle } from "./LoginTitle"
   position: relative;
   display: inline-block;
   height: 250px;
-  /* border: 1px solid green; */
+  border: 1px solid green; 
  }
  .container-form {
   display: flex;
   height: 100px;
   flex-direction: column;
   justify-content:space-around;
-  /* border: 1px solid red; */
+  border: 1px solid red; 
  }
  input {
   padding: 10px;
@@ -96,6 +96,7 @@ import { LoginTitle } from "./LoginTitle"
    font-size:30px;
    font-family: 'Amatic SC', cursive;
    font-weight: 700;
+   text-align: center;
    /* color:${theme.colors.greyBlue}; */
    /* background-color:green; */
  }
