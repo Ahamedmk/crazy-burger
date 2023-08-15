@@ -59,7 +59,7 @@ import{BsPersonCircle} from "react-icons/bs"
  }
  .input-container{
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   padding: 10px;
   background-color: whitesmoke;
   text-align: center;
@@ -68,7 +68,8 @@ import{BsPersonCircle} from "react-icons/bs"
  }
   input {
   border: none;
-   outline: none; 
+   outline: none;
+   width :100% ;
  } 
  button {
   padding: 10px;
@@ -78,8 +79,14 @@ import{BsPersonCircle} from "react-icons/bs"
   outline: none;
   border: none;
  }
+ button:hover {
+  color:${theme.colors.primary_burger} ;
+  background-color:whitesmoke ;
+  cursor: pointer;
+ }
  .icon{
   color: gray;
+  margin-right: 5px;
  }
 .circle {
   display: flex;
