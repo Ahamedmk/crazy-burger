@@ -2,7 +2,7 @@ import { useState } from "react"
 import {useNavigate } from "react-router-dom"
 import {styled} from "styled-components"
 import { theme } from "../../theme"
-// import{BsPersonCircle} from "react-icons/bs"
+import{BsPersonCircle} from "react-icons/bs"
 
  export function LoginForm() {
     const [name, setName] = useState("")
@@ -24,7 +24,12 @@ import { theme } from "../../theme"
               <h2>Connectez vous</h2>
               <div className="container-form">
               {/* <BsPersonCircle className="icon" /> */}
+              <div className="input-container">
+              <div className="circle">
+                <BsPersonCircle className="icon" />
+              </div>
                 <input type="text" value={name} onChange={e => setName(e.target.value)} required="required" placeholder="Entrez votre prénom "/>
+                </div>
                 <button >Accéder à mon espace {'>'} </button>
               </div>
             </div>
@@ -51,24 +56,32 @@ import { theme } from "../../theme"
   justify-content:space-around;
   /* border: 1px solid red;  */
  }
- input {
+ .input-container{
+  display: flex;
+  justify-content: center;
   padding: 10px;
+  background-color: whitesmoke;
+  text-align: center;
+  /* border: 1px solid red; */
   border-radius:5px;
-  border: none;
-  outline: none;
  }
+  input {
+  border: none;
+   outline: none; 
+ } 
  button {
   padding: 10px;
   border-radius:5px;
   outline: none;
   border: none;
  }
-  .icon {
-  position: absolute;
-  /* top: 50%; */
-  /* transform: translateY(-70%); */
-  left: 8px;
-}
+ .icon{
+  color: gray;
+ }
+.circle {
+  display: flex;
+  align-items: center;
+}  
  
  h1 {
    font-size:30px;
