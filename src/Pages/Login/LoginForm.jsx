@@ -47,6 +47,7 @@ import{BsPersonCircle} from "react-icons/bs"
  .container {
   /* display: inline-block; */
   height: 250px;
+  width: 280px;
   /* border: 1px solid green;  */
  }
  .container-form {
@@ -72,6 +73,8 @@ import{BsPersonCircle} from "react-icons/bs"
  button {
   padding: 10px;
   border-radius:5px;
+  color:whitesmoke ;
+  background-color: ${theme.colors.primary_burger};
   outline: none;
   border: none;
  }
@@ -85,6 +88,7 @@ import{BsPersonCircle} from "react-icons/bs"
  
  h1 {
    font-size:30px;
+   color: whitesmoke;
    font-family: 'Amatic SC', cursive;
    font-weight: 700;
    text-align: center;
@@ -93,14 +97,16 @@ import{BsPersonCircle} from "react-icons/bs"
  }
 
  hr{
-  height: 3px;
+  height: 2px;
         background-color: ${theme.colors.red};
         border: none;
  }
  
  h2 {
   font-family: 'Amatic SC', cursive;
+  color: whitesmoke;
    font-weight: 400;
   text-align: center;
+  margin-bottom: 0;
  }
  `
