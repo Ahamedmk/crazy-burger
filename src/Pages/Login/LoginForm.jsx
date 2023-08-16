@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { styled } from "styled-components";
 import { theme } from "../../theme";
 import { BsPersonCircle } from "react-icons/bs";
-import Nput from "./Nput";
+import TextInput from "./TextInput";
 
 export function LoginForm() {
   const [name, setName] = useState("");
@@ -26,7 +26,7 @@ export function LoginForm() {
         <hr />
         <h2>Connectez vous</h2>
         <div className="container-form">
-          <Nput value={name} onChange={handleChange} placeholder={"Entrez votre prénom "} Icon={<BsPersonCircle className="icon" />} required />
+          <TextInput value={name} onChange={handleChange} placeholder={"Entrez votre prénom "} Icon={<BsPersonCircle className="icon" />} required />
           <button>Accéder à mon espace {">"} </button>
         </div>
       </div>
