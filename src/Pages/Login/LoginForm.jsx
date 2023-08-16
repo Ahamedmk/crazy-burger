@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { styled } from "styled-components";
 import { theme } from "../../theme";
 import { BsPersonCircle } from "react-icons/bs";
-import TextInput from "./TextInput";
+import TextInput from "../../Reusable-ui/TextInput";
 
 export function LoginForm() {
   const [name, setName] = useState("");
