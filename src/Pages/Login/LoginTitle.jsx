@@ -6,31 +6,39 @@ import { theme } from "../../theme"
 export function LoginTitle() {
   return (
     <LoginTitleStyled>
-        <div className="crazy">CRAZEE</div>
-        <div><img src={bigburger} alt="image"></img> </div>
-        <div className="crazy">BURGER</div>
+        <h1>CRAZEE</h1>
+        <img src={bigburger} alt="image"></img>
+        <h1>BURGER</h1>
     </LoginTitleStyled>
   )
 }
 
 const LoginTitleStyled = styled.div`
 display: flex;
-justify-content: center;
-text-align: center;
+align-items: center;
+ justify-content: center;
+/* text-align: center;  */
+ transform: scale(2.5); 
 /* border: 1px solid white; */
 img {
-  height: 80px;
+  object-fit: contain;
+  object-position: center;
+  height: 60px;
+  width: 80px;
+  margin: 0 5px;
 }
-.crazy{
+h1{
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  line-height: 1em;
+  letter-spacing: 1.5px;
   font-family: 'Amatic SC', cursive;
-   font-weight: 700;
-   font-size: 60px;
+   font-weight: ${theme.fonts.weights.bold};
+   font-size: ${theme.fonts.size.P4};
   text-align: center;
-  color: ${theme.colors.primary_burger};
+  color: ${theme.colors.primary};
 
 }
 `;

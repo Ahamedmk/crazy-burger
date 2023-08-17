@@ -37,15 +37,18 @@ export function LoginForm() {
 }
 const LoginFormStyled = styled.form`
   /* border: 3px solid red ;  */
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+  text-align: center;
+  margin: 0 auto;
+  max-width: 500px;
+  min-width: 400px;
+  padding: 40px ${theme.spacing.lg};
+  border-radius: ${theme.borderRadius.round};
+  font-family: 'Amatic SC',cursive;
 
-  .container {
-    height: 250px;
-    width: 280px;
-    /* border: 1px solid green;  */
-  }
+  
   .container-form {
     display: flex;
     height: 100px;
@@ -70,23 +73,20 @@ const LoginFormStyled = styled.form`
 
   h1 {
     font-size: 30px;
-    color: whitesmoke;
-    font-family: "Amatic SC", cursive;
-    font-weight: 700;
-    text-align: center;
+    color: ${theme.colors.white};
+    font-size:${theme.fonts.size.P5} ;
   }
 
   hr {
-    height: 2px;
-    background-color: ${theme.colors.red};
-    border: none;
+    border: 1.5px solid ${theme.colors.loginLine};
+    margin-bottom:${theme.gridUnit * 5}px ;
   }
 
   h2 {
-    font-family: "Amatic SC", cursive;
-    color: whitesmoke;
+   
+    color: ${theme.colors.white};
     font-weight: 400;
-    text-align: center;
+    font-size:${theme.fonts.size.P4};
     margin-bottom: 0;
   }
 `;

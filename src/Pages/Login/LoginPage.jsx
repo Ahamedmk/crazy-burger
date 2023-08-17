@@ -20,7 +20,7 @@ const LoginPageStyled = styled.div`
   justify-content: center;
   height: 100vh;
 
-  ::before {
+  &:before {
   content: "";
   background: url(${burger}) rgba(0, 0, 0, 0.7);
   background-size: cover;
