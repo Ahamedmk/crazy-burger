@@ -3,7 +3,9 @@ import { useNavigate } from "react-router-dom";
 import { styled } from "styled-components";
 import { theme } from "../../theme";
 import { BsPersonCircle } from "react-icons/bs";
+import { IoChevronForward } from "react-icons/io5";
 import TextInput from "../../Reusable-ui/TextInput";
+import ButtonPrimary from "../../Reusable-ui/ButtonPrimary";
 
 export function LoginForm() {
   const [name, setName] = useState("");
@@ -27,7 +29,7 @@ export function LoginForm() {
         <h2>Connectez vous</h2>
         <div className="container-form">
           <TextInput value={name} onChange={handleChange} placeholder={"Entrez votre prénom "} Icon={<BsPersonCircle className="icon" />} required />
-          <button>Accéder à mon espace {">"} </button>
+          <ButtonPrimary Icon={<IoChevronForward className="secondIcon" />} label={"Accéder à mon espace"}/>
         </div>
       </div>
     </LoginFormStyled>
@@ -57,24 +59,13 @@ const LoginFormStyled = styled.form`
     outline: none;
     width: 100%;
   }
-  button {
-    padding: 10px;
-    border-radius: 5px;
-    color: whitesmoke;
-    background-color: ${theme.colors.primary_burger};
-    outline: none;
-    border: none;
-  }
-  button:hover {
-    color: ${theme.colors.primary_burger};
-    background-color: whitesmoke;
-    cursor: pointer;
-    transition-delay: 250ms, 250ms;
-    transition-property: background-color, color;
-  }
+  
   .icon {
     color: gray;
     margin-right: 5px;
+  }
+  .secondIcon {
+    margin-left: 5px;
   }
 
   h1 {
