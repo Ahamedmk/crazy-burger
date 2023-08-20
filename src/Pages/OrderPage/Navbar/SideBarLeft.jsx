@@ -8,9 +8,6 @@ export default function SideBarLeft() {
 }
 const SideBarLeftStyles = styled.div`
   height: 100%;
-  padding-left: 20px;
-  /* width: 600px; */
-  
+  padding-left: 20px; 
   border: 1px solid green;
-
 `;

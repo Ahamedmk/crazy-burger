@@ -17,9 +17,6 @@ const LoginTitleStyled = styled.div`
 display: flex;
 align-items: center;
  justify-content: center;
-/* text-align: center;  */
- /* transform: scale(2.5);  */
-/* border: 1px solid white; */
 img {
   object-fit: contain;
   object-position: center;

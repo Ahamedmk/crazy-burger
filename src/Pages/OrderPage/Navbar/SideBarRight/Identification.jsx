@@ -2,13 +2,14 @@ import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { styled } from "styled-components";
 import { BsPersonCircle } from "react-icons/bs";
+import { theme } from "../../../../theme";
 
 export default function Identification() {
   const { username } = useParams();
   return (
     <IdentificationStyled>
       <div>
-        <h4>Hey, {username} </h4>
+        <h4>Hey, <span className="name">{username}</span> </h4>
         <Link to="/">
           <button>Se déconnecter</button>
         </Link>
@@ -32,12 +33,15 @@ button {
     font-size: 12px;
     white-space: nowrap;
     border: none;
+    color: grey;
     background-color: white;
     text-decoration: none;
 }
+.name {
+  color: ${theme.colors.primary};
+}
 .icon {
     font-size: 36px;
-    padding: 10px;
-
+    padding: 10px;   
 }
 `;

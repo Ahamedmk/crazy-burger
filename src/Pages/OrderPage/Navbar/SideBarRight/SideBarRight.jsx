@@ -8,10 +8,8 @@ export default function SideBarRight() {
 }
 const SideBarRightStyled = styled.div`
   display: flex;
-  /* justify-content: flex-end;
-  align-items: center;  */
   height: 100%;
-  /* width: 600px; */
-  border: 1px solid green;
-  /* margin: auto 0; */
+  color: grey;
+  padding-right: 50px;
+  border: 1px solid green; 
 `;
