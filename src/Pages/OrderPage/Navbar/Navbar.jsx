@@ -15,7 +15,7 @@ export default function Navbar() {
 const NavbarStyles = styled.div`
    display: flex;
  /* justify-content: space-between; */
-  width: 1200px;
+  max-width: 1200px;
   height: 98.18px;
   border: 1px solid red;
   border-radius: 20px 20px 0 0;
