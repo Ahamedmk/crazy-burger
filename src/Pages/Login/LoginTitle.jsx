@@ -3,9 +3,9 @@ import {styled} from "styled-components"
 import bigburger from "../../assets/logo-orange.png"
 import { theme } from "../../theme"
 
-export function LoginTitle() {
+export function LoginTitle({classname}) {
   return (
-    <LoginTitleStyled>
+    <LoginTitleStyled className={classname}>
         <h1>CRAZEE</h1>
         <img src={bigburger} alt="image"></img>
         <h1>BURGER</h1>
@@ -18,7 +18,7 @@ display: flex;
 align-items: center;
  justify-content: center;
 /* text-align: center;  */
- transform: scale(2.5); 
+ /* transform: scale(2.5);  */
 /* border: 1px solid white; */
 img {
   object-fit: contain;

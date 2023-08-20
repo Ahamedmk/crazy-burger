@@ -22,7 +22,8 @@ display: flex;
 justify-content: flex-end; 
 max-width: 250px;
 border: 1px solid yellow;
-margin-right: 70px;
+margin: auto 0;
+/* margin-right: 70px; */
 h4 {
     margin: 0px;
 }

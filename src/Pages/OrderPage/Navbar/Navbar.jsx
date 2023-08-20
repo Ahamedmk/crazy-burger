@@ -14,14 +14,15 @@ export default function Navbar() {
 }
 const NavbarStyles = styled.div`
    display: flex;
- /* justify-content: space-between; */
-  max-width: 1200px;
+  justify-content: space-between; 
+  max-width: 1400px;
   height: 98.18px;
   border: 1px solid red;
   border-radius: 20px 20px 0 0;
   margin: 0 auto;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   background:white;
+  font-family: "Open Sans", sans-serif;
 
 
 `;

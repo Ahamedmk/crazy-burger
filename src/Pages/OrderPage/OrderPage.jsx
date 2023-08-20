@@ -2,16 +2,31 @@
 // import { Link } from "react-router-dom"
 import { styled } from 'styled-components';
 import Navbar from './Navbar/Navbar'
+import Main from './Main/Main';
 
 export default function OrderPage() {
   return (
     <OrderPageStyled>
+      <div className='container'>
       <Navbar />
+      <Main />
+      </div>
       
     </OrderPageStyled>
   )
 }
 const OrderPageStyled = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+padding-top:10px;
+
+ .container {
+  border: 2px solid red;
+  height: 95vh;
+  width: 95vw;
+  
+ }
   
   &:before {
   content: "";
