@@ -21,6 +21,7 @@ const NavbarStyles = styled.div`
   border-radius: 20px 20px 0 0;
   margin: 0 auto;
   margin-top: 20px;
+  background:white;
 
 
 `;
