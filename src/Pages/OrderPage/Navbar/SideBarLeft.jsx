@@ -1,7 +1,9 @@
 import { styled } from "styled-components";
 
 export default function SideBarLeft() {
-  return <SideBarLeftStyles>SideBarLeft</SideBarLeftStyles>;
+  return <SideBarLeftStyles>
+    SideBarLeft
+    </SideBarLeftStyles>;
 }
 const SideBarLeftStyles = styled.div`
   height: 100%;
