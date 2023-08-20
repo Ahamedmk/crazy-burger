@@ -1,8 +1,8 @@
-// import { useParams } from 'react-router-dom'
-// import { Link } from "react-router-dom"
+
 import { styled } from 'styled-components';
 import Navbar from './Navbar/Navbar'
 import Main from './Main/Main';
+import { theme } from '../../theme';
 
 export default function OrderPage() {
   return (
@@ -22,7 +22,7 @@ align-items: center;
 padding-top:10px;
 
  .container {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   height: 95vh;
   width: 95vw;
   
@@ -30,7 +30,7 @@ padding-top:10px;
   
   &:before {
   content: "";
-  background:#FF9F1A;
+  background:${theme.colors.primary};
   background-size: cover;
   background-position: center;
   background-blend-mode: darken;

@@ -11,5 +11,5 @@ const SideBarRightStyled = styled.div`
   height: 100%;
   color: grey;
   padding-right: 50px;
-  border: 1px solid green; 
+  /* border: 1px solid green;  */
 `;

@@ -22,7 +22,7 @@ const IdentificationStyled = styled.div`
 display: flex;
 justify-content: flex-end; 
 max-width: 250px;
-border: 1px solid yellow;
+/* border: 1px solid yellow; */
 margin: auto 0;
 /* margin-right: 70px; */
 h4 {

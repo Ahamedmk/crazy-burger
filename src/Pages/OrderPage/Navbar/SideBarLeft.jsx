@@ -7,7 +7,8 @@ export default function SideBarLeft() {
     </SideBarLeftStyles>;
 }
 const SideBarLeftStyles = styled.div`
+  display: flex;
   height: 100%;
   padding-left: 20px; 
-  border: 1px solid green;
+  /* border: 1px solid green; */
 `;
