@@ -3,9 +3,9 @@ import {styled} from "styled-components"
 import bigburger from "../../assets/logo-orange.png"
 import { theme } from "../../theme"
 
-export function LoginTitle({classname}) {
+export function LoginTitle({classname, onClick}) {
   return (
-    <LoginTitleStyled className={classname}>
+    <LoginTitleStyled className={classname} onClick={onClick}>
         <h1>CRAZEE</h1>
         <img src={bigburger} alt="image"></img>
         <h1>BURGER</h1>
