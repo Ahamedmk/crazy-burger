@@ -8,7 +8,7 @@ import burger from "../../assets/burger-background.jpg"
 export default function LoginPage() {
   return (
     <LoginPageStyled>
-      <LoginTitle /> 
+      <LoginTitle classname={"scaling"} /> 
       <LoginForm />
     </LoginPageStyled>
   )
@@ -32,6 +32,9 @@ const LoginPageStyled = styled.div`
   right: 0;
   bottom: 0;
   z-index: -1;
+  }
+  .scaling {
+    scale: 2.5;
   }
   
 `;
