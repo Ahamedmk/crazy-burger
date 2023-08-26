@@ -4,13 +4,22 @@ import { fakeMenu1 } from "../../../fakeData/fakeMenu";
 import  ButtonPrimary from "../../../Reusable-ui/ButtonPrimary"
 
 export default function Main() {
+
+  function tronquerAvecEllipse(texte, longueurMax) {
+    if (texte.length > longueurMax) {
+        return texte.substring(0, longueurMax) + "...";
+    }
+    return texte;
+}
   return <MainStyles>
     <div className="CardMenu">
       <div className="Burger">
       <img src={fakeMenu1[0].imageSource} alt="burger" />
       </div>
       <div>
-        <h1>{fakeMenu1[0].title}</h1>
+        <h1>
+          {tronquerAvecEllipse((fakeMenu1[0].title),15)}
+          </h1>
         <div className="validatePrice">
           <span style={{color:"orange"}}>{(fakeMenu1[0].price).toFixed(2)} €</span>
           <ButtonPrimary label="Ajouter" classname="changeButton"/>
@@ -25,6 +34,7 @@ const MainStyles = styled.div`
   background:${theme.colors.background_white};
   box-shadow: 0px 8px 20px 8px rgba(0, 0, 0, 0.2) inset;
   border-radius: 0px 0px 15px 15px;
+  padding: 50px 50px 150px;
   margin: 0 auto;
   .CardMenu {
     display: flex;
@@ -63,5 +73,9 @@ h1 {
 .changeButton{
   padding-left:25px;
   padding-right:25px;
+  &:hover{
+    border: 1px solid orange;
+    background-color: white;
+  }
 }
 `;
