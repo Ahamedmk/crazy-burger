@@ -2,8 +2,10 @@
 import { styled } from 'styled-components';
 import ButtonPrimary from '../../../Reusable-ui/ButtonPrimary';
 import { fakeMenu2 } from '../../../fakeData/fakeMenu';
+import { useState } from 'react';
 
 export default function Menu() {
+  const [menu, setMenu] = useState(fakeMenu2)
   
   function tronquerAvecEllipse(texte, longueurMax) {
     if (texte.length > longueurMax) {
@@ -13,7 +15,7 @@ export default function Menu() {
 }
   return (
     <MenuSyled>
-      {fakeMenu2.map(fakeMenu =>(
+      {menu.map(fakeMenu =>(
       <div className="CardMenu" key={fakeMenu.id}>
         
       <div className="Burger">
@@ -36,13 +38,15 @@ export default function Menu() {
  
 const MenuSyled = styled.div`
 display: grid;
-grid-template-columns: 240px 240px 240px 240px;
+grid-template-columns: repeat(4,1fr);
 grid-row-gap: 60px;
-gap: 30px;
+padding: 50px 50px 150px;
+justify-items: center;
+/* gap: 65px; */
 
   .CardMenu {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     background-color: white;
     width: 240px;
     height:330px;
@@ -58,6 +62,8 @@ gap: 30px;
   img {
     width:200px;
     height:145px;
+    background-size: cover;
+  background-position: center;
     /* border: 3px solid greenyellow ;   */
   }
 }
