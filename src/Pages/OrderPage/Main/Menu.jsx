@@ -64,9 +64,9 @@ justify-items: center;
     margin-top: 50px;
   
   img {
-    width:auto;
+    width:100%;
     height:100%;
-    object-fit: cover;
+    object-fit: contain;
     background-size: cover;
   background-position: center;
     /* border: 3px solid greenyellow ;   */
