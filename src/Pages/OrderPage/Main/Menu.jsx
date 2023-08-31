@@ -56,12 +56,17 @@ justify-items: center;
   .Burger {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    width: 200px;
+    height: 145px;
     /* border: 1px solid blue ; */
     margin-top: 50px;
   
   img {
-    width:200px;
-    height:145px;
+    width:auto;
+    height:100%;
+    object-fit: cover;
     background-size: cover;
   background-position: center;
     /* border: 3px solid greenyellow ;   */
