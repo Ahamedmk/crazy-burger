@@ -20,12 +20,13 @@ const ButtonPrimaryStyled = styled.button`
   background-color: ${theme.colors.primary_burger};
   outline: none;
   border: none;
+  transition: 0.1ms;
 
   &:hover {
     color: ${theme.colors.primary_burger};
     background-color: whitesmoke;
     cursor: pointer;
-    transition-delay: 250ms, 250ms;
-    transition-property: background-color, color;
+    /* transition-delay: 250ms, 250ms; */
+    /* transition-property: background-color, color; */
   }
 `;
