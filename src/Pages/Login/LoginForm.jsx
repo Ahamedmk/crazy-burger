@@ -36,10 +36,6 @@ export function LoginForm() {
   );
 }
 const LoginFormStyled = styled.form`
-  /* border: 3px solid red ;  */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
   text-align: center;
   margin: 0 auto;
   max-width: 500px;
