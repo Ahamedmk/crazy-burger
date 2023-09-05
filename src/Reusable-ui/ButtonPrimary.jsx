@@ -1,6 +1,5 @@
 import { styled } from "styled-components";
 import { theme } from "../theme";
-// import { BiChevronRight } from "react-icons/bi";
 
 export default function ButtonPrimary({ label, Icon, classname }) {
   return (

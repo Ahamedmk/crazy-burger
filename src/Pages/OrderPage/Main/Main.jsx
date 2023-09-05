@@ -17,6 +17,6 @@ const MainStyles = styled.div`
   border-radius: 0px 0px 15px 15px;
   /* padding: 50px 50px 150px; */
   /* margin: 0 auto; */
-  overflow-y: scroll;
+   overflow-y: scroll; 
  
 `;
