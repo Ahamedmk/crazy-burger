@@ -7,9 +7,10 @@ export default function ToggleButton({
   onToggle,
   labelIfChecked = "Fermer",
   labelIfUnchecked = "Ouvrir",
+  className,
 }) {
   return (
-    <ToggleButtonStyled>
+    <ToggleButtonStyled className={className}>
       <input
         type="checkbox"
         className="toggle"
@@ -31,6 +32,7 @@ const ToggleButtonStyled = styled.div`
   /* border: 1px solid red; */
 
   display: flex;
+  /* align-items: center; */
   margin-right: 10px;
   input[type="checkbox"] {
     // Hides the square box but keeps the core "toggle functionality"

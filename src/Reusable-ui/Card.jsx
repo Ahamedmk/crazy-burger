@@ -42,6 +42,7 @@ const CardMenuStyled = styled.div`
     height:330px;
     /* border: 1px solid red; */
     box-shadow: -8px 8px 20px 0px rgb(0 0 0 / 20%);
+    border-radius: 10px;
   
   .Burger {
     display: flex;
