@@ -1,8 +1,10 @@
 import { styled } from "styled-components";
 import Identification from "./Identification";
+import ToggleButton from "../../../../Reusable-ui/ToggleButton";
 
 export default function SideBarRight() {
   return <SideBarRightStyled>
+    <ToggleButton />
     <Identification />
     </SideBarRightStyled>;
 }

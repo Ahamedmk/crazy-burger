@@ -17,13 +17,13 @@ const ButtonPrimaryStyled = styled.button`
   padding: 10px;
   border-radius: 5px;
   color: whitesmoke;
-  background-color: ${theme.colors.primary_burger};
+  background-color: ${theme.colors.primary};
   outline: none;
   border: none;
   transition: 0.1ms;
 
   &:hover {
-    color: ${theme.colors.primary_burger};
+    color: ${theme.colors.primary};
     background-color: whitesmoke;
     cursor: pointer;
     /* transition-delay: 250ms, 250ms; */
