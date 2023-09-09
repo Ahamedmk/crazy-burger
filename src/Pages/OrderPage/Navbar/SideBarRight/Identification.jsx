@@ -24,6 +24,8 @@ justify-content: flex-end;
 max-width: 250px;
 /* border: 1px solid yellow; */
 margin: auto 0;
+padding-left: 50px;
+padding-right: 50px;
 /* margin-right: 70px; */
 h4 {
     margin: 0px;
