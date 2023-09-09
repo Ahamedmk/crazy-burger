@@ -7,10 +7,9 @@ export default function ToggleButton({
   onToggle,
   labelIfChecked = "Fermer",
   labelIfUnchecked = "Ouvrir",
-  className,
 }) {
   return (
-    <ToggleButtonStyled className={className}>
+    <ToggleButtonStyled>
       <input
         type="checkbox"
         className="toggle"
